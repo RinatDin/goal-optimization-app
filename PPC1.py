@@ -13,7 +13,7 @@ from openai import OpenAI
 from browser_history import get_history
 
 # === CONFIG ===
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))  # Replace with your real token
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])  # Replace with your real token
 HISTORY_FILE = "history.csv"
 
 # === Initialize session state ===
